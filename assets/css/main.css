@@ -215,8 +215,34 @@ a:after {
 
 /* Image Opacity */
 .grid img {
-    opacity: .7;
+    /*opacity: .7;*/
 }
 .grid img:hover {
-    opacity: 1;
+    /*opacity: 1;*/
+}
+
+figure {
+	width: 300px;
+	margin: 0 0 0 30px;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 300px;
+	height: 300px;
+	margin: 0 0 0 45px;
+	background: rgba(0,0,0,.7);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+	color: white;
+	font-size: 14px;
+	text-align: left;
+}
+
+figure:hover figcaption {
+	opacity: 1;
 }
